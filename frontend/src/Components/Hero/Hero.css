@@ -1,0 +1,72 @@
+.hero {
+    min-height: 90vh;
+    background-image: url('../Assets/neutral_hero.png'); /* Set your hero image as background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9%;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Optional: dark overlay for better text readability */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Change transparency here */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  .hero-brand {
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff; /* White text on background */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-tagline {
+    font-size: 20px;
+    font-weight: 400;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-latest-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 75px;
+    background: #ffffff;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .hero-latest-btn:hover {
+    background: #dddddd;
+    color: #000;
+  }
+  
+  .hero-latest-btn img {
+    width: 16px;
+  }
+  
+  /* Remove the old .hero-left and .hero-right styles */
+  
